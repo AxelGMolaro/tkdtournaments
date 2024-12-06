@@ -10,4 +10,8 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'flags-mode-page',
+    loadComponent: () => import('./flags-mode-page/flags-mode-page.page').then( m => m.FlagsModePagePage)
+  },
 ];
